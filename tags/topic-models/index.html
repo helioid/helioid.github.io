@@ -1,0 +1,19 @@
+---
+layout: default
+title: Topic Models
+---
+
+{% for post in site.posts %}
+    {% if post.tags contains 'topic models' %}
+    <div class="post type-post status-publish format-standard hentry category-general">
+
+    <h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+    <small>{{ post.date | date: "%A, %B %d, %Y" }}</small>
+
+    <div class="entry">
+    {{ post.content }}
+    </div>
+    <p class="postmetadata"></p>
+    </div>
+    {% endif %}
+{% endfor %}

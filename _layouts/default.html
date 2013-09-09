@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Helioid Blog, {{ page.title }}" />
+{% for css in site.css %}<link rel="stylesheet" type="text/css" media="all" href="{{ css }}" />{% endfor %}
+<title>Helioid Blog | {{ page.title }}</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/assets/images/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" title="Helioid &raquo; Feed" href="http://blog.helioid.com/feed/" />
+</head>
+<body class="home blog">
+<div id="page">
+<div id="header" role="banner">
+<div id="headerimg">
+<h1><a href="/"><img src="/assets/images/logo-helioid-220x53.png"/></a></h1>
+</div>
+</div>
+<hr />
+<div id="content" class="narrowcolumn" role="main">{{ content }}</div>
+<div id="sidebar" role="complementary">
+    <ul>
+        <li class="widget widget_nav_menu"><h2 class="widgettitle">Info</h2>
+            <div class="menu-about-container">
+                <ul id="menu-about" class="menu">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.helioid.com/">Helioid Search</a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.helioid.com/about">About Helioid</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="widget widget_links"><h2 class="widgettitle">Links</h2>
+            <ul class='xoxo blogroll'>
+                <li><a href="http://code.helioid.com/">Helioid Code</a></li>
+                <li><a href="http://www.ioimmersive.org/" title="IoImmersive">IoImmersive</a></li>
+            </ul>
+    </ul>
+    <h2>Tags</h2>
+    {% for tag in site.tags %}
+    <span style="font-size: {{ tag | last | size | times: 800 | divided_by: site.tags.size | plus: 80 }}%">
+        <a href="/tags/{{ tag | first | slugize | replace:' ','-' }}/">{{ tag | first }}</a>
+    </span>
+    {% endfor %}
+</div>
+<hr />
+<div id="footer" role="contentinfo">
+    <p>&copy; {{ site.time | date: "%Y" }}, Helioid Inc. All Rights Reserved.</p>
+</div>
+</div>
+
+
+<script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount', 'UA-7364068-2']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga, s);})();</script>
+</body>
+</html>

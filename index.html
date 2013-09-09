@@ -1,0 +1,34 @@
+---
+layout: default
+title: Home
+---
+
+{% for post in paginator.posts %}
+    <div class="post type-post status-publish format-standard hentry category-general">
+
+    <h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+    <small>{{ post.date | date: "%A, %B %d, %Y" }}</small>
+
+    <div class="entry">
+    {{ post.content }}
+    </div>
+    <p class="postmetadata"></p>
+    </div>
+{% endfor %}
+
+<div class="navigation">
+  {% if paginator.next_page %}
+    <div class="alignleft">
+      <a href="{{ paginator.next_page_path }}">← older posts</a>
+    </div>
+  {% endif %}
+
+  {% if paginator.previous_page %}
+    <div class="alignright">
+      <a href="{% if paginator.previous_page == 1 %}/{% else %}
+      {{ paginator.previous_page_path }}
+      {% endif %}">
+      newer posts →</a>
+    </div>
+  {% endif %}
+</div>
