@@ -1,0 +1,148 @@
+body {
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	margin: 20px 0 0 0;
+}
+
+a, a:visited {
+	color: #1872E7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	margin: 0;
+}
+
+/*
+* Post Formatting
+*/
+
+.post h3 {
+	margin-bottom: 0;
+}
+
+.post span.date {
+	color: #888;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.post pre {
+	background-color: #efefef;
+	padding: 10px;
+	margin-bottom: 20px;
+	overflow: auto;
+}
+
+.post code {
+	margin-bottom: 0px;
+}
+
+.post div.media {
+	text-align: center;
+}
+
+/*
+* Post Archive
+*/
+
+ul.post-list {
+	list-style-type: none;
+}
+
+ul.post-list span {
+	color: #888;
+    display: inline-block;
+    padding-right: 0.5em;
+    text-align: right;
+    width: 6em;
+}
+
+/*
+* Format the RSS subscription link
+*/
+
+div.subscribe {
+	line-height: 16px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+
+div.subscribe a {
+	color: #5e5e5e;
+}
+
+div.subscribe img {
+	margin-bottom: 2px;
+	vertical-align: middle;
+}
+
+/*
+* Add spacing and alignment to footer
+*/
+
+div.footer {
+    color: #888;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+div.footer span {
+	float: right;
+}
+
+div.footer hr {
+	margin-bottom: 5px;
+}
+
+.twitter-follow-button {
+	margin-bottom: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+blockquote {
+    margin: 1em 2em;
+    font-style: italic;
+}
+
+.pagination {
+    padding: 3em 0 2em;
+    color: #888888;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.older-posts {
+    float: left;
+    width 50%;
+}
+
+.newer-posts {
+    float: right;
+    text-align: right;
+    width 50%;
+}
+
+.container_12 {
+    margin-top: 3em;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+ol ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol ol ol {
+    list-style-type: decimal;
+}

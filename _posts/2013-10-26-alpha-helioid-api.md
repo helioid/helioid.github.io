@@ -21,7 +21,7 @@ JSON using this query:
 
 The returned results are stuctured as follows:
 
-```json
+```ruby
 {
   "query": "Data Analytics",
   "date": "2013-10-27T03:15:53Z",
@@ -34,7 +34,7 @@ The returned results are stuctured as follows:
                   behaviors that can increase your revenue and reduce
                   cost with Teradata <b>data</b> mining technology.",
       "title": "Teradata - Data Mining and Analytics Solutions",
-      "url": "http://www.teradata.com/business-needs/data-mining-and-analytics/"
+      "url": "http://www.teradata.com/business-needs/..."
     },
     ...
     ]

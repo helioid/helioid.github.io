@@ -7,4 +7,6 @@ pygments: true
 safe: true
 
 css:
+  - /css/custom.css
   - /css/style.css
+  - /css/syntax.css
