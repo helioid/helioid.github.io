@@ -21,7 +21,7 @@ JSON using this query:
 
 The returned results are stuctured as follows:
 
-```ruby
+```json
 {
   "query": "Data Analytics",
   "date": "2013-10-27T03:15:53Z",
