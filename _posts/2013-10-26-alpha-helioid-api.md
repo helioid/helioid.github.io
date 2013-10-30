@@ -28,7 +28,6 @@ The returned results are stuctured as follows:
   "categories": [{
     "name": "data mining",
     "items": [{
-      "date": "2013-10-27T03:15:54Z",
       "rank": 1,
       "summary": "Gain fresh new insights into emerging trends and
                   behaviors that can increase your revenue and reduce
